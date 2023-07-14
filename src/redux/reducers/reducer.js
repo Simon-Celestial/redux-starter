@@ -26,7 +26,7 @@ let initialState = {
 function reducer(state = initialState, action) {
     switch (action?.type) {
         case 'ADD_GOOD_TO_CART':
-            const good = state?.goods?.find(item =>
+            const good = state.goods.find(item =>
                 item.id === action.payload.id);
             const cart = [...state?.cart, good];
             return {
