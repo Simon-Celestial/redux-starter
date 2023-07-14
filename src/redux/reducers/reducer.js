@@ -28,7 +28,7 @@ function reducer(state = initialState, action) {
         case 'ADD_GOOD_TO_CART':
             const good = state.goods.find(item =>
                 item.id === action.payload.id);
-            const cart = [...state?.cart, good];
+            const cart = [...state.cart, good];
             return {
                 ...state,
                 cart,
