@@ -19,7 +19,7 @@ let initialState = {
             price: 150
         }
     ],
-    cartGoods: []
+    goods: []
 
 }
 
